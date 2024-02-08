@@ -125,12 +125,12 @@ export default function BlogDetailPage({ params }: BlogPostProps) {
 
   return (
     <div>
-      <PageHeroBanner title={blogFound?.name} />
+      <PageHeroBanner title={blogFound?.name || ""} />
       <div className="wrapper">
         <div className="grid grid-cols-3 gap-6 py-10">
           <div className="col-span-2">
             <div className="relative w-auto h-[500px]">
-              <Image fill alt="" src={blogFound?.main_image} />
+              <Image fill alt="" src={blogFound?.main_image || ""} />
             </div>
             <h1 className="text-3xl font-bold py-4">{blogFound?.name}</h1>
             <div className="flex justify-between text-gray-700">
