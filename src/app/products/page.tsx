@@ -8,7 +8,7 @@ export default function ProductsPage({
   searchParams?: {
     query?: string;
     page?: string;
-    limit?: string;
+    limit?: number;
     sort?: string;
   };
 }) {
